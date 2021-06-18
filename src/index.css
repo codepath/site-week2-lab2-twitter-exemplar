@@ -1,0 +1,237 @@
+/* @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"); */
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+:root {
+  --color-twitter-light-blue: rgb(234, 245, 252);
+  --color-twitter-blue: rgb(72, 161, 235);
+  --color-twitter-bg: rgb(231, 236, 239);
+  --color-twitter-light-gray: rgb(245, 248, 250);
+  --color-twitter-mid-gray: rgb(206, 214, 220);
+  --color-twitter-dark-gray: rgb(102, 117, 130);
+  --color-font-main: rgb(0, 0, 0);
+  --color-font-secondary: #14171a;
+  --color-nav-border: rgba(0, 0, 0, 0.25);
+}
+body {
+  background: var(--color-twitter-bg);
+  font-size: 14px;
+  font-family: Helvetica Neue;
+}
+
+i,
+button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+i.fa-circle {
+  color: var(--color-twitter-mid-gray);
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 50%;
+}
+i.fa-user {
+  color: var(--color-twitter-dark-gray);
+  font-size: 24px;
+  transform: translateY(6px);
+}
+
+/* *************
+  MEDIA QUERIES
+***************/
+@media screen and (max-width: 1150px) {
+  .navbar .navbar-container {
+    max-width: 1000px;
+    padding: 0 15px;
+  }
+  .navbar .actions {
+    display: none;
+  }
+  .main {
+    padding: 60px 20px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .navbar .navbar-container {
+    max-width: 740px;
+  }
+  .navbar .search,
+  .navbar .actions {
+    display: none;
+  }
+  .navbar .navbar-container .bird {
+    transform: translateX(0px);
+  }
+  .main {
+    padding: 60px 20px;
+  }
+  .advertisements {
+    display: none;
+  }
+}
+@media screen and (max-width: 740px) {
+  .navbar .navbar-container {
+    max-width: 100vw;
+  }
+  .search,
+  .actions {
+    display: none;
+  }
+  .advertisements,
+  .user-profile {
+    display: none;
+  }
+  .main {
+    padding: 60px 20px;
+  }
+  .tweet {
+    min-width: 300px;
+  }
+  .tweet .tweet-text {
+    width: 80%;
+  }
+}

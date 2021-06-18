@@ -1,0 +1,26 @@
+/***************
+  Twitter Feed
+****************/
+
+.feed {
+  flex: 5;
+  background: white;
+}
+
+.feed .twitter-feed {
+  padding-right: 16px;
+  min-height: calc(100vh - 250px);
+}
+
+.feed .see-new-tweets {
+  background: rgb(245, 248, 250);
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feed .see-new-tweets p {
+  color: var(--color-twitter-blue);
+  cursor: pointer;
+}

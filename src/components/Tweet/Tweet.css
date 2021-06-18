@@ -1,0 +1,65 @@
+/****************
+   ACTUAL TWEET
+*****************/
+.tweet {
+  width: 100%;
+  border: solid 1px var(--color-twitter-light-gray);
+  display: grid;
+  grid-template-columns: 70px 1fr;
+}
+.tweet-left {
+  padding: 5px;
+}
+.tweet-right {
+  padding: 15px;
+  width: 100%;
+}
+.tweet-right .tweet-top-meta {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+}
+
+.tweet-right .tweet-top-meta span {
+  color: var(--color-twitter-dark-gray);
+}
+.tweet-right .tweet-top-meta i {
+  color: var(--color-twitter-blue);
+  transform: translateY(-7px);
+}
+.tweet-right .tweet-top-meta i.fa-check {
+  color: white;
+  font-size: 8px;
+  transform: translateY(0px);
+}
+.tweet-right .tweet-top-meta .tweet-top-name-and-handle {
+  display: flex;
+}
+.tweet-right .tweet-top-meta .name {
+  font-weight: bold;
+}
+.tweet-right .tweet-text {
+  margin-top: 5px;
+  line-height: 22px;
+  margin-right: 20px;
+}
+.tweet-right .tweet-bottom-meta {
+  display: flex;
+  margin-top: 10px;
+}
+.tweet-right .tweet-bottom-meta i {
+  margin-right: 10px;
+  color: var(--color-twitter-dark-gray);
+}
+.tweet-right .tweet-bottom-meta span {
+  cursor: pointer;
+}
+.tweet-right .tweet-bottom-meta span:hover i {
+  color: var(--color-twitter-blue);
+}
+
+.tweet-right .tweet-bottom-meta span {
+  margin-right: 40px;
+  color: var(--color-twitter-dark-gray);
+  display: flex;
+}

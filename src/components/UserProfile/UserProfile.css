@@ -1,0 +1,68 @@
+/******************
+   LEFT COLUMN 
+*******************/
+.user-profile {
+  flex: 3;
+}
+.user-profile .user-info {
+  background: white;
+  height: 220px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.user-profile .user-info .card-top {
+  flex: 1;
+  background: var(--color-twitter-blue);
+}
+.user-profile .user-info .card-mid {
+  flex: 1;
+  background: white;
+  display: flex;
+}
+.user-profile .card-mid .fa-stack {
+  background: var(--color-twitter-blue);
+  color: white;
+  padding: 20px;
+  border-radius: 50%;
+  border: solid 3px white;
+  margin-top: -30px;
+  margin-left: 10px;
+}
+.user-profile .card-mid .fa-plus {
+  color: var(--color-twitter-blue);
+  font-size: 8px;
+  transform: translateY(11px);
+}
+.user-profile .card-mid .twitter-handle {
+  margin-top: 10px;
+  margin-left: 10px;
+  letter-spacing: 0.2px;
+}
+.user-profile .card-mid .twitter-handle h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.user-profile .card-mid .twitter-handle p {
+  color: var(--color-twitter-dark-gray);
+  font-weight: 400;
+}
+.user-profile .card-bottom {
+  width: 80%;
+  height: 60px;
+  margin: -20px 0px 0 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.user-profile .card-bottom p {
+  font-size: 14px;
+  color: var(--color-twitter-dark-gray);
+}
+.user-profile .card-bottom h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--color-twitter-blue);
+  margin-top: -10px;
+}

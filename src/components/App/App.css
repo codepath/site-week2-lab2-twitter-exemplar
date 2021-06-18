@@ -1,0 +1,12 @@
+/******************
+   MAIN SECTION 
+*******************/
+.main {
+  padding-top: 60px;
+  display: flex;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.col {
+  margin: 0 16px;
+}
