@@ -4,65 +4,76 @@
 .user-profile {
   flex: 3;
 }
-.user-profile .user-info {
+.card {
   background: white;
   height: 220px;
   margin-bottom: 10px;
   display: flex;
   flex-direction: column;
+  min-width: 175px;
 }
-.user-profile .user-info .card-top {
+.card-bg {
   flex: 1;
-  background: var(--color-twitter-blue);
+  background: var(--twitter-blue);
 }
-.user-profile .user-info .card-mid {
+.card-content {
   flex: 1;
   background: white;
   display: flex;
 }
-.user-profile .card-mid .fa-stack {
-  background: var(--color-twitter-blue);
+.card-content .fa-stack {
+  background: var(--twitter-blue);
   color: white;
   padding: 20px;
   border-radius: 50%;
   border: solid 3px white;
-  margin-top: -30px;
   margin-left: 10px;
+  transform: translateY(-23px);
 }
-.user-profile .card-mid .fa-plus {
-  color: var(--color-twitter-blue);
+.card-content .fa-camera {
+  transform: translateY(-16px);
+}
+.card-content .fa-plus {
+  color: var(--twitter-blue);
   font-size: 8px;
   transform: translateY(11px);
 }
-.user-profile .card-mid .twitter-handle {
+.card-content .twitter-handle {
   margin-top: 10px;
   margin-left: 10px;
   letter-spacing: 0.2px;
 }
-.user-profile .card-mid .twitter-handle h3 {
+.card-content .twitter-handle h3 {
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 5px;
 }
-.user-profile .card-mid .twitter-handle p {
-  color: var(--color-twitter-dark-gray);
+.card-content .twitter-handle p {
+  color: var(--twitter-dark-gray);
   font-weight: 400;
 }
-.user-profile .card-bottom {
-  width: 80%;
+.card-footer {
   height: 60px;
-  margin: -20px 0px 0 10px;
+  margin: -20px 0px 0px 20px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
 }
-.user-profile .card-bottom p {
+.card-footer p {
   font-size: 14px;
-  color: var(--color-twitter-dark-gray);
+  color: var(--twitter-dark-gray);
 }
-.user-profile .card-bottom h3 {
+.card-footer span.metric {
   font-size: 20px;
   font-weight: bold;
-  color: var(--color-twitter-blue);
+  color: var(--twitter-blue);
   margin-top: -10px;
+  display: block;
+}
+
+
+@media screen and (max-width: 740px) {
+  .user-profile {
+    display: none;
+  }
 }

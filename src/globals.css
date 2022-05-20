@@ -1,4 +1,6 @@
-/* @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"); */
+* {
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
@@ -143,18 +145,18 @@ table {
 }
 
 :root {
-  --color-twitter-light-blue: rgb(234, 245, 252);
-  --color-twitter-blue: rgb(72, 161, 235);
-  --color-twitter-bg: rgb(231, 236, 239);
-  --color-twitter-light-gray: rgb(245, 248, 250);
-  --color-twitter-mid-gray: rgb(206, 214, 220);
-  --color-twitter-dark-gray: rgb(102, 117, 130);
-  --color-font-main: rgb(0, 0, 0);
-  --color-font-secondary: #14171a;
-  --color-nav-border: rgba(0, 0, 0, 0.25);
+  --twitter-light-blue: rgb(234, 245, 252);
+  --twitter-blue: rgb(72, 161, 235);
+  --twitter-bg: rgb(231, 236, 239);
+  --twitter-light-gray: rgb(245, 248, 250);
+  --twitter-mid-gray: rgb(206, 214, 220);
+  --twitter-dark-gray: rgb(102, 117, 130);
+  --font-main: rgb(0, 0, 0);
+  --font-secondary: #14171a;
+  --nav-border: rgba(0, 0, 0, 0.25);
 }
 body {
-  background: var(--color-twitter-bg);
+  background: var(--twitter-bg);
   font-size: 14px;
   font-family: Helvetica Neue;
 }
@@ -166,7 +168,7 @@ button {
   border: none;
 }
 i.fa-circle {
-  color: var(--color-twitter-mid-gray);
+  color: var(--twitter-mid-gray);
   font-size: 35px;
   display: flex;
   justify-content: center;
@@ -175,63 +177,42 @@ i.fa-circle {
   border-radius: 50%;
 }
 i.fa-user {
-  color: var(--color-twitter-dark-gray);
+  color: var(--twitter-dark-gray);
   font-size: 24px;
   transform: translateY(6px);
 }
 
-/* *************
+.col {
+  margin: 0 16px;
+}
+.red {
+  color: #ff7169;
+}
+
+main {
+  padding-top: 60px;
+  display: flex;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+
+/***************
   MEDIA QUERIES
-***************/
+****************/
+
 @media screen and (max-width: 1150px) {
-  .navbar .navbar-container {
-    max-width: 1000px;
-    padding: 0 15px;
-  }
-  .navbar .actions {
-    display: none;
-  }
-  .main {
+  main {
     padding: 60px 20px;
   }
 }
 @media screen and (max-width: 1000px) {
-  .navbar .navbar-container {
-    max-width: 740px;
-  }
-  .navbar .search,
-  .navbar .actions {
-    display: none;
-  }
-  .navbar .navbar-container .bird {
-    transform: translateX(0px);
-  }
-  .main {
+  main {
     padding: 60px 20px;
-  }
-  .advertisements {
-    display: none;
   }
 }
 @media screen and (max-width: 740px) {
-  .navbar .navbar-container {
-    max-width: 100vw;
-  }
-  .search,
-  .actions {
-    display: none;
-  }
-  .advertisements,
-  .user-profile {
-    display: none;
-  }
-  .main {
+  main {
     padding: 60px 20px;
-  }
-  .tweet {
-    min-width: 300px;
-  }
-  .tweet .tweet-text {
-    width: 80%;
   }
 }

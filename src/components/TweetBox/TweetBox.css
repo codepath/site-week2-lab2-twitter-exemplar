@@ -1,52 +1,27 @@
 .tweet-box {
-  background: #eee;
-  width: 50vw;
-  margin: 100px auto;
-  padding: 2em;
-}
-.tweet-box textarea {
-  width: 70%;
-  min-height: 90px;
-  font-size: 20px;
-  resize: none;
-}
-.tweet-box-extras {
-  width: 70%;
-  margin: 30px auto 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 20px;
-}
-.tweet-box .submit-button {
-  padding: 6px 12px;
-  color: white;
-  background: dodgerblue;
-  font-size: 16px;
-}
-
-.tweet-container {
-  background: var(--color-twitter-light-blue);
+  background: var(--twitter-light-blue);
   transition: height 0.2s ease;
 }
-.tweet-container .row {
+.tweet-textarea {
+  background: var(--twitter-light-blue);
+  padding-top: 10px;
+  transition: height 0.2s ease;
   display: flex;
 }
-.tweet-container .tweet-box-top {
-  padding-top: 10px;
-}
-.tweet-avatar {
+.tweet-textarea .avatar-icon {
   margin-left: 20px;
 }
 
-.tweet-container textarea {
+.tweet-textarea textarea {
+  width: 70%;
+  min-height: 90px;
   flex: 1;
   height: 30px;
   margin-left: 10px;
   margin-right: -10px;
   border-radius: 8px;
-  border: solid 1px var(--color-twitter-mid-gray);
-  color: var(--color-twitter-blue);
+  border: solid 1px var(--twitter-mid-gray);
+  color: var(--twitter-blue);
   padding: 8px 20px 0 8px;
   padding-right: 40px;
   font-size: 16px;
@@ -54,21 +29,18 @@
   font-weight: 300;
   resize: none;
 }
-.tweet-container textarea.expanded {
+.tweet-textarea textarea.expanded {
   height: 150px;
 }
-.red {
-  color: #ff7169;
-}
-.tweet-box-top .fa-image,
-.tweet-box-top .fa-smile {
+.tweet-textarea .fa-image,
+.tweet-textarea .fa-smile {
   transform: translateX(-25px) translateY(8px);
   font-size: 24px;
-  color: var(--color-twitter-blue);
+  color: var(--twitter-blue);
   transition: all 0.2s ease;
 }
 
-.tweet-extras {
+.tweet-box-footer {
   height: 60px;
   display: flex;
   align-items: flex-start;
@@ -77,39 +49,39 @@
   margin-right: 15px;
   margin-top: 10px;
 }
-.tweet-extras .icon-set {
+.tweet-box-footer .tweet-box-icons {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex: 1;
 }
-.tweet-extras i {
-  color: var(--color-twitter-blue);
+.tweet-box-footer i {
+  color: var(--twitter-blue);
   font-size: 24px;
   transform: translateY(3px);
   padding-bottom: 5px;
 }
-.tweet-extras .icon-gif {
+.tweet-box-footer .icon-gif {
   font-size: 10px;
   padding: 4px;
-  border: solid 1px var(--color-twitter-blue);
+  border: solid 1px var(--twitter-blue);
   border-radius: 4px;
   transform: translateY(0px);
 }
-.tweet-extras .submit {
-  /* flex: 1; */
+.tweet-box-footer .submit {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
-.tweet-extras .submit-button {
-  background: var(--color-twitter-blue);
+.tweet-box-footer .submit-button {
+  background: var(--twitter-blue);
   color: white;
   font-size: 15px;
   padding: 6px 12px;
   border-radius: 20px;
   margin-left: 10px;
 }
+
 .tweet-length {
   margin-left: auto;
   flex: 1;

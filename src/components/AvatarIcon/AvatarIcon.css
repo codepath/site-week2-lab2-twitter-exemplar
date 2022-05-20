@@ -1,0 +1,17 @@
+.avatar-icon {
+  display: flex;
+}
+.avatar-icon i.fa-circle {
+  color: var(--twitter-mid-gray);
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.avatar-icon i.fa-user {
+  color: var(--twitter-dark-gray);
+  font-size: 24px;
+  transform: translateY(6px);
+}

@@ -4,7 +4,7 @@
 .advertisements {
   flex: 2;
 }
-.advertisements .advert {
+.advert {
   background: white;
   display: flex;
   flex-direction: column;
@@ -12,20 +12,20 @@
   padding: 15px 20px;
   text-align: center;
 }
-.advertisements .advert img {
+.advert img {
   max-height: 200px;
 }
-.advertisements .advert h3 {
+.advert h3 {
   font-size: 18px;
   font-weight: 500;
   margin: 5px 0 15px 0;
 }
-.advertisements .advert p {
+.advert p {
   font-weight: 300;
   margin: 0 0 15px 0;
 }
-.advertisements .advert button {
-  background: var(--color-twitter-blue);
+.advert button {
+  background: var(--twitter-blue);
   color: white;
   padding: 8px 12px;
   width: 100%;
@@ -34,7 +34,7 @@
 }
 
 .advertisements .fa-stack i.fa-circle {
-  color: var(--color-twitter-mid-gray);
+  color: var(--twitter-mid-gray);
   font-size: 35px;
   display: flex;
   justify-content: center;
@@ -43,7 +43,14 @@
   border-radius: 50%;
 }
 .advertisements .fa-stack i.fa-user {
-  color: var(--color-twitter-dark-gray);
+  color: var(--twitter-dark-gray);
   font-size: 24px;
   transform: translateY(6px);
+}
+
+
+@media screen and (max-width: 1000px) {
+  .advertisements {
+    display: none;
+  }
 }

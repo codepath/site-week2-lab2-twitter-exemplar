@@ -1,10 +1,12 @@
+import * as React from "react"
+import imgSrc from "../../assets/twitter_delight_prompt_2.png"
 import "./Advertisements.css"
 
-function Advertisement() {
+export default function Advertisements() {
   return (
     <div className="col advertisements">
       <div className="advert">
-        <img src="https://abs.twimg.com/a/1553555845/img/delight/delight_prompt_2.png" alt="old twitter" />
+        <img src={imgSrc} alt="old twitter" />
         <h3>Sneak a peak at the new Twitter</h3>
         <p>Bookmarks, night mode, data saver, and more — see all the new features coming to the web.</p>
         <button>Take a look</button>
@@ -12,5 +14,3 @@ function Advertisement() {
     </div>
   )
 }
-
-export default Advertisement
