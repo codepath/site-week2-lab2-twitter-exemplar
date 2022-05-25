@@ -4,7 +4,7 @@ Week 2 - React Lab #2
 
 ## Intro
 
-Twitter has kindly asked Site interns to help them run an A/B test for their new UI. An A/B test is where an experimenter shows different UI screens to users and determines which interface they prefer.
+Twitter has kindly asked SITE interns to help them run an A/B test for their new UI. An A/B test is where an experimenter shows different UI screens to users and determines which interface they prefer.
 
 Previously Twitter's feed page looked like this:
 
