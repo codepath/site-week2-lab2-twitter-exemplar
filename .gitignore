@@ -8,11 +8,6 @@ node_modules
 # testing
 coverage
 
-# next.js
-.next/
-out/
-build
-
 # tsup output
 dist
 
@@ -33,12 +28,3 @@ yarn-error.log*
 .env.production.local
 .env.development
 .env.production
-
-*-lock.*
-*.lock
-
-# turbo
-.turbo
-
-# custom
-old
