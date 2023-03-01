@@ -7,9 +7,8 @@
     "dev": "vite dev"
   },
   "dependencies": {
-    "instant-noodles": "^0.0.3",
-    "react": "<18.0.0",
-    "react-dom": "<18.0.0"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@testing-library/react": "12.1.4",
