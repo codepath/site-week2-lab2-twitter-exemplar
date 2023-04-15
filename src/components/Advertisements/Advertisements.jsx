@@ -1,4 +1,3 @@
-import * as React from "react"
 import imgSrc from "../../assets/twitter_delight_prompt_2.png"
 import "./Advertisements.css"
 

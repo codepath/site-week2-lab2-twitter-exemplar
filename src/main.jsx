@@ -1,13 +1,12 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React, { StrictMode }  from "react";
+import { createRoot } from "react-dom/client"
 import App from "./App";
 import "./globals.css";
 
-export const config = {};
-
-ReactDOM.render(
-  <React.StrictMode>
+const container = createRoot(document.getElementById("root"))
+container.render(
+  <StrictMode>
     <App />
-  </React.StrictMode>,
-  document.getElementById("root")
-);
+  </StrictMode>,
+)
+
