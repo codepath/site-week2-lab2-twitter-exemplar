@@ -1,9 +1,9 @@
-import * as React from "react"
+import { useState } from "react"
 import TweetInput from "./TweetInput"
 import "./TweetBox.css"
 
 export default function TweetBox({ setTweets, userProfile, tweetText = "", setTweetText }) {
-  const [isFocused, setIsFocused] = React.useState(false)
+  const [isFocused, setIsFocused] = useState(false)
 
   const handleOnTweetTextChange = (event) => {
     setTweetText(event.target.value)

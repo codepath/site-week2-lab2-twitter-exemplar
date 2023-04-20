@@ -1,4 +1,3 @@
-import * as React from "react"
 import AvatarIcon from "../AvatarIcon/AvatarIcon"
 
 export default function TweetInput({ value, handleOnChange, isExpanded, setIsFocused }) {

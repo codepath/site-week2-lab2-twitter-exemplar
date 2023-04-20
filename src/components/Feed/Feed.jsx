@@ -1,4 +1,3 @@
-import * as React from "react"
 import Tweet from "../Tweet/Tweet"
 import TweetBox from "../TweetBox/TweetBox"
 import "./Feed.css"

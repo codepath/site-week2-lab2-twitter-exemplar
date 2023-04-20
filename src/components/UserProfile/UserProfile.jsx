@@ -1,4 +1,3 @@
-import * as React from "react"
 import { formatNumTweets, formatNumFollowers } from "../../utils/format"
 import "./UserProfile.css"
 

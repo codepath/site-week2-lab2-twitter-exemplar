@@ -1,4 +1,3 @@
-import * as React from "react"
 import "./AvatarIcon.css"
 
 export default function AvatarIcon() {

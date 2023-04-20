@@ -1,4 +1,3 @@
-import * as React from "react"
 import AvatarIcon from "../AvatarIcon/AvatarIcon"
 import "./Navbar.css"
 
